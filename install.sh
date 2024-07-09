@@ -16,18 +16,12 @@ if [[ -d /usr/bin ]]; then
     install_path="/usr/bin"
 else
     install_path="/data/data/com.termux/files/usr/bin"
+    pip install inpass==2.0.0
 fi
 
 mv insta-breaker "$install_path/"
 chmod +x "${install_path}/insta-breaker"
 
-pip install inpass==2.0.0
-
-if command -v inpass &> /dev/null; then
-    echo -e "${WHITE}[${GREEN}++${WHITE}] ${GREEN}inpass installation complete"
-else
-    echo -e "${WHITE}[${RED}++${WHITE}] ${RED}inpass installation failed"
-fi
 
 if command -v insta-breaker &> /dev/null; then
     echo -e "${WHITE}[${GREEN}++${WHITE}] ${GREEN}insta-breaker installation complete"
