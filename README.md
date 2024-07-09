@@ -18,6 +18,8 @@ To use Insta-Breaker, ensure you have the necessary dependencies installed. The 
 sudo apt-get update
 sudo apt-get install python3
 pip install inpass==2.0.0
+sudo bash install.sh
+sudo insta-breaker
 ```
 
 ### For Termux Users
@@ -26,29 +28,9 @@ pip install inpass==2.0.0
 pkg update
 pkg install python -y
 pip install inpass==2.0.0
+bash install.sh
+insta-breaker
 ```
-
-## Usage
-
-Run the script as root for proper functionality. Follow the prompts to enter your Instagram username and the path to your password file.
-
-```bash
-bash insta-breaker
-```
-
-### Script Workflow
-
-1. The script starts by displaying a banner.
-2. It checks if you have root permissions.
-3. It ensures `inpass` is installed.
-4. It prompts you to enter your Instagram username and the path to your password file.
-5. If the provided password file is valid, it uses `inpass` to attempt logging into Instagram.
-
-### Example
-
-`bash
-sudo bash insta-breaker.sh
-`
 
 You'll be prompted to enter your Instagram username and the path to your password file. Ensure the path is correct, and the file exists.
 
@@ -61,7 +43,7 @@ If this repository gets 5k likes, we will add more features such as:
 
 ## Follow Us
 
-Follow my [GitHub account](https://github.com/your-github-account) for updates and more projects.
+Follow my [GitHub account](https://github.com/GH05T-HUNTER5) for updates and more projects.
 
 ## Disclaimer
 
