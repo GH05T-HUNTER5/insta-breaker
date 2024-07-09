@@ -16,10 +16,20 @@ To use Insta-Breaker, ensure you have the necessary dependencies installed. The 
 
 ```bash
 sudo apt-get update
+```
+```bash
 sudo apt-get install python3
+```
+```bash
 git clone https://github.com/GH05T-HUNTER5/insta-breaker
+```
+```bash
 cd insta-breaker
+```
+```bash
 sudo bash install.sh
+```
+```bash
 sudo insta-breaker
 ```
 
@@ -27,10 +37,20 @@ sudo insta-breaker
 
 ```bash
 pkg update
+```
+```bash
 pkg install python -y
+```
+```bash
 git clone https://github.com/GH05T-HUNTER5/insta-breaker
+```
+```bash
 cd insta-breaker
+```
+```bash
 bash install.sh
+```
+```bash
 insta-breaker
 ```
 
