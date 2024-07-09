@@ -27,10 +27,7 @@ git clone https://github.com/GH05T-HUNTER5/insta-breaker
 cd insta-breaker
 ```
 ```bash
-python3 -m venv ~/venvs/myenv
-```
-```bash
-source ~/venvs/myenv/bin/activate
+pip install inpass==2.0.0
 ```
 ```bash
 sudo bash install.sh
