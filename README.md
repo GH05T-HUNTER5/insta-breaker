@@ -12,31 +12,8 @@ Insta-Breaker is a tool designed for automated login attempts on Instagram using
 
 To use Insta-Breaker, ensure you have the necessary dependencies installed. The tool relies on `inpass` for handling the login attempts.
 
-### For Linux Users
 
-```bash
-sudo apt-get update
-```
-```bash
-sudo apt-get install python3
-```
-```bash
-git clone https://github.com/GH05T-HUNTER5/insta-breaker
-```
-```bash
-cd insta-breaker
-```
-```bash
-pip install inpass==2.0.0
-```
-```bash
-sudo bash install.sh
-```
-```bash
-sudo insta-breaker
-```
-
-### For Termux Users
+### INSTALLATION
 
 ```bash
 pkg update
