@@ -17,7 +17,6 @@ To use Insta-Breaker, ensure you have the necessary dependencies installed. The 
 ```bash
 sudo apt-get update
 sudo apt-get install python3
-pip install inpass==2.0.0
 sudo bash install.sh
 sudo insta-breaker
 ```
@@ -27,7 +26,6 @@ sudo insta-breaker
 ```bash
 pkg update
 pkg install python -y
-pip install inpass==2.0.0
 bash install.sh
 insta-breaker
 ```
