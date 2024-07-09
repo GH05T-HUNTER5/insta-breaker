@@ -1,3 +1,27 @@
-z="
-";Uz=' not';LCz='d}Th';Lz=' THI';SBz='[0;3';ez='unde';Ez='echo';ACz='d -u';xBz='en';jBz='pip ';Sz='leas';eBz='npas';LBz='='\''\0';YBz='{';BCz=') -n';xz='gree';ICz='}+${';pBz='term';UCz='tup';dBz='-v i';rz='05T ';GBz='31m'\''';vBz='n ]]';ABz='033[';PBz='rest';yz='n='\''\';az='  Al';NCz='st b';uBz='r/bi';Dz=') {';cz='pyri';Xz='is s';CBz='m'\''';Qz=' use';EBz=''\''\03';pz='t of';hz='ws o';QBz='ar='\''';Bz='this';SCz='exit';yBz=' $(i';VCz='pp';TCz=' 1';XBz=')';wBz='; th';IBz='e='\''\';PCz='n as';JCz='e}] ';kz='ies ';Oz='r Gi';Kz='READ';HBz='whit';tz='ER5,';RCz='t"';TBz='5m'\''';bz='l co';ECz='"${w';FCz='hite';Vz=' cop';rBz='pp()';NBz=';36m';vz='3   ';QCz=' roo';fBz='s) ]';Wz='y th';Pz='tHub';jz='untr';HCz='{red';DCz=' -e ';gz='e la';KCz='${re';RBz='\033';tBz=' /us';qBz='ux_a';MCz='t mu';oz='righ';oBz='fi';Tz='e do';mBz='inpa';Rz='r, p';Gz=' "##';nz='Copy';Zz='t ##';sz='HUNT';Hz='####';cBz='and ';mz='    ';qz='  GH';UBz='linu';lBz='all ';wz='}';CCz='e 0 ';JBz='1;37';FBz='3[1;';WBz='tup(';Fz=' ""';Az='read';iBz='else';MBz='33[0';gBz=']; t';sBz='[ -d';DBz='red=';ZBz='if [';uz=' 202';hBz='hen';lz='  ##';Cz='one(';Mz='S ##';OBz=''\''';nBz='ss';aBz='[ $(';OCz='e ra';dz='ght ';kBz='inst';BBz='1;32';Jz='### ';Iz='"';VBz='x_se';KBz='cyan';Yz='crip';fz='r th';Nz=' Dea';bBz='comm';iz='f al';GCz='} [$';
-eval "$Az$Bz$Cz$Dz$z$Ez$Fz$z$Ez$Gz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Iz$z$Ez$Gz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Iz$z$Ez$Gz$Hz$Hz$Hz$Hz$Jz$Kz$Lz$Mz$Hz$Hz$Hz$Hz$Hz$Iz$z$Ez$Gz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Iz$z$Ez$Gz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Iz$z$Ez$Gz$Nz$Oz$Pz$Qz$Rz$Sz$Tz$Uz$Vz$Wz$Xz$Yz$Zz$Iz$z$Ez$Gz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Iz$z$Ez$Gz$az$bz$cz$dz$ez$fz$gz$hz$iz$bz$jz$kz$lz$Iz$z$Ez$Gz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Iz$z$Ez$Gz$mz$mz$nz$oz$pz$qz$rz$sz$tz$uz$vz$mz$lz$Iz$z$Ez$Gz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Iz$z$Ez$Gz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Hz$Iz$z$wz$z$xz$yz$ABz$BBz$CBz$z$DBz$EBz$FBz$GBz$z$HBz$IBz$ABz$JBz$CBz$z$KBz$LBz$MBz$NBz$OBz$z$PBz$QBz$RBz$SBz$TBz$z$UBz$VBz$WBz$XBz$z$YBz$z$ZBz$aBz$bBz$cBz$dBz$eBz$fBz$gBz$hBz$z$Ez$Fz$z$iBz$z$jBz$kBz$lBz$mBz$nBz$z$oBz$z$wz$z$pBz$qBz$rBz$z$YBz$z$ZBz$aBz$bBz$cBz$dBz$eBz$fBz$gBz$hBz$z$Ez$Fz$z$iBz$z$jBz$kBz$lBz$mBz$nBz$z$oBz$z$wz$z$ZBz$sBz$tBz$uBz$vBz$wBz$xBz$z$ZBz$yBz$ACz$BCz$CCz$gBz$hBz$z$Ez$DCz$ECz$FCz$GCz$HCz$ICz$HBz$JCz$KCz$LCz$Xz$Yz$MCz$NCz$OCz$PCz$QCz$RCz$z$SCz$TCz$z$oBz$z$UBz$VBz$UCz$z$iBz$z$pBz$qBz$VCz$z$oBz"
+#!/usr/bin/bash
+
+GREEN='\033[1;32m'
+RED='\033[1;31m'
+WHITE='\033[1;37m'
+
+install_path="/usr/bin"
+if [[ ! -d $install_path ]]; then
+    install_path="/data/data/com.termux/files/usr/bin"
+fi
+
+mv insta-breaker "$install_path/"
+chmod +x "${install_path}/insta-breaker"
+
+pip install inpass==2.0.0
+
+if command -v inpass &> /dev/null; then
+    echo -e "${WHITE}[${GREEN}++${WHITE}] ${GREEN}inpass installation complete"
+else
+    echo -e "${WHITE}[${RED}++${WHITE}] ${RED}inpass installation failed"
+fi
+
+if command -v insta-breaker &> /dev/null; then
+    echo -e "${WHITE}[${GREEN}++${WHITE}] ${GREEN}insta-breaker installation complete"
+else
+    echo -e "${WHITE}[${RED}++${WHITE}] ${RED}insta-breaker installation failed"
+fi
