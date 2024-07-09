@@ -17,6 +17,8 @@ To use Insta-Breaker, ensure you have the necessary dependencies installed. The 
 ```bash
 sudo apt-get update
 sudo apt-get install python3
+git clone https://github.com/GH05T-HUNTER5/insta-breaker
+cd insta-breaker
 sudo bash install.sh
 sudo insta-breaker
 ```
@@ -26,6 +28,8 @@ sudo insta-breaker
 ```bash
 pkg update
 pkg install python -y
+git clone https://github.com/GH05T-HUNTER5/insta-breaker
+cd insta-breaker
 bash install.sh
 insta-breaker
 ```
